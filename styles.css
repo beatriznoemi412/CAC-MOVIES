@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.body{
+  font-family: "Nunito", sans-serif ;
+  background-color: rgb(55, 47, 47);
+}
+#header{
+  background-color: #9f3647;
+  height: 10vh;
+  position:sticky;
+  top: 0;
+}
+
+h1,
+h2 {
+  color: white;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left:40px;
+  margin-right: 40px;
+  padding: 1.5rem 0;
+}
+.lista-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  list-style: none;
+  gap: 20px;
+}
+.logo{
+  width: 20px;
+  height: 15px;
+}
+#img{
+    width: 100%;
+    height:600px;
+}
+.background {
+    background:linear-gradient(to right top, #0a0a0a8a, #3733338a), url('img/man-watching.jpg');
+    background-size: cover; /* Para ajustar la imagen al tamaño del contenedor */
+    background-position: center; /* Para centrar la imagen */
+    background-repeat: no-repeat; 
+    height: 90vh;
+}
+.background-titulo{
+  padding-top: 20px;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 30px;
+}
+.subtitulo-form{
+  margin-bottom: 40px;
+}
+.registrate, .boton-anterior, .boton-siguiente {
+  background-color: #9f3647;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left:20px
+}
+hr{
+  margin-top:80px;
+  border: 1px solid  #9f3647;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.input{
+  background-color: rgb(246, 242, 235);
+ 
+}
+.busca {
+  background-color:  #9f3647;;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  padding: 10px;
+  border: solid 1px white;
+
+}
+.input{
+  background-color: rgb(246, 242, 235);
+}
+.pelicula{
+  width:200px;
+  height: 300px;
+  border-radius: 10px;
+  margin: 32px;
+}
+.boton-anterior, .boton-siguiente{
+  color: white;
+  border: solid 1px white;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+/*Registrarse*/
+.header{
+  margin-left: 20px;
+}
+.popkorn{
+  background-image: url('img/popkorn.jpg');
+  width: 100%;
+  height: 100vh;
+  background-size: cover; /* Para ajustar la imagen al tamaño del contenedor */
+  background-position: center; /* Para centrar la imagen */
+  background-repeat: no-repeat; 
+  
+}
+
+ .registrarse form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  gap: 10px;
+  max-width: 400px;
+  height: 88vh;
+  margin: 0 auto;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+label {
+  color: rgb(198, 195, 195);
+}
+
+.linea-borde{
+  border: 1px solid 
+}
+ .titulo{
+  font-weight: bold;
+  text-align: center;
+}
+
+.registro{
+  background-color: rgb(47, 44, 44);
+  border-radius: 20px;
+  border:solid 1px  #9f3647;;
+  padding:10px;
+  color:white;
+  width: 70%;
+}
+.date {
+  color:rgb(173, 168, 168);
+}
+/*INICIAR SESION*/
+.iniciar-sesion{
+  color:rgb(173, 168, 168);
+  font-size: .9rem;
+}
+/*FOOTER*/
+#footer {
+  background-color: #9f3647;
+}

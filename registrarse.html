@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAC-MOVIES</title>
+    <link rel="icon" href="img/luz-camara.png" type="accion/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+
+Garamond:ital@1&family=Gabriela&family=Josefin+Sans:wght@100&family= 
+Krub:wght@600;700&family=Lobster+Two&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=
+Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="popkorn">
+    <header class="header">
+            <h1>
+                <a href="index.html">
+                    <img class="logo" src="img/cinta-filmacion.png" alt="Logo de CAC-MOVIES">
+                    CAC-MOVIES
+                </a>
+            </h1>
+    </header>
+    <main>
+      
+       <section class="registrarse">
+        <form  action=""  method="post" >
+            <h1 class="titulo">Registro</h1>
+            <input class="registro" type="text" id="nombre" name="nombre" required placeholder="Nombre">
+           
+            <input class="registro" type="text" required placeholder="Apellido" id="apellido">
+           
+            <input class="registro" type="number" min="0" max="99" placeholder="Edad" id="edad">
+            
+            <input class="registro date" type="date" id="fech">
+           
+            <input class="registro" type="email" required placeholder="correo" id="correo">
+
+            <input class="registro" type="password" required placeholder="Contraseña" id="contraseña">
+            
+            <select class="registro" id="pais-select" placeholder="Pais" name="pais-select">
+                <option value="0">País</option>
+                <option value="1">México</option>
+                <option value="2">Uruguay</option>
+                <option value="3">Argentina</option>
+                <option value="4">Bolivia</option>
+                <option value="5">Chile</option>
+                <option value="6">Perú</option>
+                <option value="7">Brazil</option>
+            </select>
+           
+            <input class="registro" type="checkbox" id="terminos" name="terminos">
+            <label for="terminos">Acepto los términos y condiciones</label>
+            <br>
+            <input class="registro" type="submit" value="Registrarse">
+        </form>
+        <p>Necesitas ayuda?</p>
+    </section>
+
+    </main>
+</body>
+</html>
