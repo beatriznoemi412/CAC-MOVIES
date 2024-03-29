@@ -14,7 +14,6 @@
   position:sticky;
   top: 0;
 }
-
 h1,
 h2 {
   color: white;
@@ -34,6 +33,11 @@ nav{
   font-size: 1.2rem;
   list-style: none;
   gap: 20px;
+}
+.item:hover{
+  border: 1px solid #ce5065;
+  border-radius: 20px;
+  background-color: #ce5065;
 }
 .logo{
   width: 20px;
@@ -112,6 +116,9 @@ a {
   font-size: 1.2rem;
   cursor: pointer;
 }
+.peliculas-aclamadas{
+  margin-bottom: 60px;
+}
 /*Registrarse*/
 .header{
   margin-left: 20px;
@@ -171,4 +178,8 @@ label {
 /*FOOTER*/
 #footer {
   background-color: #9f3647;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
