@@ -14,6 +14,7 @@
   position:sticky;
   top: 0;
 }
+span,
 h1,
 h2 {
   color: white;
@@ -33,6 +34,7 @@ nav{
   font-size: 1.2rem;
   list-style: none;
   gap: 20px;
+
 }
 .item:hover{
   border: 1px solid #ce5065;
@@ -44,6 +46,7 @@ nav{
   height: 15px;
 }
 /*Index.html*/
+
 #img{
     width: 100%;
     height:600px;
@@ -109,8 +112,18 @@ hr{
 .input{
   background-color: rgb(246, 242, 235);
 }
+.section{
+  display: flex;
+  flex-direction: column;
+}
+
+.cards{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 .pelicula{
-  width:200px;
+  width:17%;
   height: 300px;
   border-radius: 10px;
   margin: 32px;
@@ -187,8 +200,5 @@ label {
 /*FOOTER*/
 #footer {
   background-color: #9f3647;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+ 
 }
