@@ -13,6 +13,7 @@
   height: 10vh;
   position:sticky;
   top: 0;
+  z-index: 1000; /* Z-index alto para asegurarse de que el header esté encima de las imágenes */
 }
 span,
 h1,
@@ -128,6 +129,12 @@ hr{
   border-radius: 10px;
   margin: 32px;
 }
+.scroll-reveal-img {
+  max-width: 100%;
+  position: relative;
+  z-index: 900; /* Z-index menor que el header para que las imágenes pasen detrás */
+}
+
 .boton-anterior, .boton-siguiente{
   color: white;
   border: solid 1px white;
