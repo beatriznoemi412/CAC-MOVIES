@@ -102,7 +102,7 @@ hr{
  
 }
 .busca {
-  background-color:  #9f3647;;
+  background-color:  #9f3647;
   color: white;
   font-size: 1.1rem;
   border-radius: 25px;
@@ -116,6 +116,7 @@ hr{
 .section{
   display: flex;
   flex-direction: column;
+  
 }
 
 .cards{
@@ -124,7 +125,7 @@ hr{
   flex-wrap: wrap;
 }
 .pelicula{
-  width:17%;
+  width: 200px;
   height: 300px;
   border-radius: 10px;
   margin: 32px;
@@ -148,6 +149,28 @@ a {
 .peliculas-aclamadas{
   margin-bottom: 60px;
 }
+.scroll-container{
+ 
+  overflow-x: auto; /* Habilita el scroll horizontal */
+  width: 100%; /* Ajusta el ancho del contenedor */
+  white-space: nowrap; /* Evita que las imágenes se envuelvan a una nueva línea */
+ 
+}
+/* Estilos para la barra de scroll */
+.scroll-container::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra de scroll */
+  background-color:  rgb(55, 47, 47);/
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color:  #9f3647;
+  border-radius: 10px; /* Bordes redondeados para la barra de scroll */
+}
+.cards-dos{
+  display: flex;
+  justify-content: space-between;
+}
+
 /*Registrarse*/
 .header{
   margin-left: 20px;
