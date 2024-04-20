@@ -35,13 +35,20 @@ nav{
   font-size: 1.2rem;
   list-style: none;
   gap: 20px;
-
+    /* Agregar efecto de botón presionado */
+    transition: transform 0.3s, box-shadow 0.3s;
+}   
+.logoNav:hover,
+.lista-nav:hover {
+        transform: scale(0.95);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        background-color: #ce5065;
+    
 }
-.item:hover{
-  border: 1px solid #ce5065;
-  border-radius: 20px;
-  background-color: #ce5065;
-}
+.logoNav {
+  transition: transform 0.3s, box-shadow 0.3s;
+ }
 .logo{
   width: 20px;
   height: 15px;
@@ -83,6 +90,7 @@ h2 {
 .subtitulo-form{
   margin-bottom: 40px;
 }
+.busca,
 .registrate, .boton-anterior, .boton-siguiente {
   background-color: #9f3647;
   font-size: 1.4rem;
@@ -90,7 +98,18 @@ h2 {
   padding: 20px;
   margin-top: 20px;
   margin-left:20px;
-  }
+   /* Agregar efecto de botón presionado */
+   transition: transform 0.3s, box-shadow 0.3s;
+}
+.busca:hover,
+.registrate:hover,
+.boton-anterior:hover,
+.boton-siguiente:hover {
+    background-color: #9f3647;
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
 hr{
   margin-top:80px;
   border: 1px solid  #9f3647;
