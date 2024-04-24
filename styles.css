@@ -142,19 +142,70 @@ hr{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 60px;
+  margin: 40px 80px ;
 }
+.card{
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  
+}
+.card:hover{  
+  box-shadow: 0 0 40px rgba(159, 54, 72, 0.8);
+  transform: scale(0.9);
+ 
+ }
 .pelicula{
   width: 200px;
   height: 300px;
   border-radius: 10px;
-  margin: 32px;
+ 
+  opacity: 1;
 }
 .scroll-reveal-img {
   max-width: 100%;
   position: relative;
-  z-index: 900; /* Z-index menor que el header para que las imágenes pasen detrás */
+  z-index: 0; /* Z-index menor que el header para que las imágenes pasen detrás */
 }
+.titulo-pelicula{
+  z-index: 2;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  max-width: 20rem;
+  width: 100%;
+  transform: translateY(-50%) translateX(-50%);
+  filter: blur(5px);
+  opacity: 0;
+  transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out;
 
+}
+.titulo-pelicula:hover{
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: blur(0);
+  opacity: 1;
+}
+  h4 {
+      font-size: 1.6rem;
+      font-weight: bold;
+      opacity: 0;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.1rem;
+      transition: opacity 0.5s ease-in-out;
+}
+  h4:hover{
+    width: 100%;
+    padding: 0.5rem;
+    opacity: 1;
+}
 .boton-anterior, .boton-siguiente{
   color: white;
   border: solid 1px white;
@@ -173,12 +224,14 @@ a {
   overflow-x: auto; /* Habilita el scroll horizontal */
   width: 100%; /* Ajusta el ancho del contenedor */
   white-space: nowrap; /* Evita que las imágenes se envuelvan a una nueva línea */
- 
+  padding: 50px;
+  
 }
 /* Estilos para la barra de scroll */
 .scroll-container::-webkit-scrollbar {
   width: 10px; /* Ancho de la barra de scroll */
-  background-color:  rgb(55, 47, 47);/
+  background-color:  rgb(55, 47, 47);
+
 }
 
 .scroll-container::-webkit-scrollbar-thumb {
@@ -188,6 +241,8 @@ a {
 .cards-dos{
   display: flex;
   justify-content: space-between;
+  gap: 25px;
+  margin: 40px 30px ;
 }
 
 /*Registrarse*/
