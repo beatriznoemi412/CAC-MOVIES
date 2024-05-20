@@ -25,21 +25,36 @@ Staatliches&display=swap" rel="stylesheet">
     <main>
       
        <section class="registrarse">
-        <form  action=""  method="post" >
+        <form  action=""  method="get" class="form">
             <h1 class="titulo">Registro</h1>
-            <input class="registro" type="text" id="nombre" name="nombre" required placeholder="Nombre">
-           
-            <input class="registro" type="text" required placeholder="Apellido" id="apellido">
-           
+            
+            <div>
+            <input class="registro" type="text" id="nombre" name="nombre" placeholder="Nombre">
+            <div class="error-text"></div>
+        </div>
+        <div>
+            <input class="registro"type="text" placeholder="Apellido" id="apellido">
+            <div class="error-text"></div>
+        </div>
+        <div>
             <input class="registro" type="number" min="0" max="99" placeholder="Edad" id="edad">
-            
-            <input class="registro date" type="date" id="fech">
-           
-            <input class="registro" type="email" required placeholder="correo" id="correo">
+            <div class="error-text"></div>
+        </div>
+        <div> 
+            <input class="registro" class=" date" type="date" id="fech">
+            <div class="error-text"></div>
+        </div>
+        <div>
+            <input class="registro" type="email" placeholder="correo" id="correo">
+            <div class="error-text"></div>
+        </div>
 
-            <input class="registro" type="password" required placeholder="Contraseña" id="contraseña">
-            
-            <select class="registro" id="pais-select" placeholder="Pais" name="pais-select">
+        <div>
+            <input class="registro" type="password" placeholder="Contraseña" id="contraseña">
+            <div class="error-text"></div>
+        </div>
+        <div>  
+            <select id="pais-select" class="registro" placeholder="Pais" name="pais-select">
                 <option value="0">País</option>
                 <option value="1">México</option>
                 <option value="2">Uruguay</option>
@@ -49,15 +64,24 @@ Staatliches&display=swap" rel="stylesheet">
                 <option value="6">Perú</option>
                 <option value="7">Brazil</option>
             </select>
-           
-            <input class="registro" type="checkbox" id="terminos" name="terminos">
+            <div class="error-text"></div>
+        </div>
+        <div>  
+            <input type="checkbox" id="terminos" name="terminos">
             <label for="terminos">Acepto los términos y condiciones</label>
+            <div class="error-text"></div>
+        </div>
+        <div >  
             <br>
             <input class="registro" type="submit" value="Registrarse">
+            <div class="error-text"></div>
+        </div>
+    
         </form>
         <p>Necesitas ayuda?</p>
     </section>
-
+    
     </main>
+    <script src="js/registrarse.js"></script>
 </body>
 </html>

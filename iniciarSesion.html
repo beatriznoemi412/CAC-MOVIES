@@ -24,16 +24,25 @@ Staatliches&display=swap" rel="stylesheet">
     </header>
     <main>
         <section class="registrarse">
-           <form action="" method="post">
+           <form action="" method="get" class="form">
             <h1 class="titulo">Iniciar Sesión</h1>
-            <input class="registro" type="email" required placeholder="correo" id="correo">
-
-            <input class="registro" type="password" required placeholder="Contraseña" id="contraseña">
-            <input class="registro" type="submit" value="Iniciar Sesión">
-            <a class="iniciar-sesion" href="registrarse.html">Registrarse</a>
+            <div>
+                <input class="registro" type="email" placeholder="Email" id="email" name="email">
+                <div class="error-text"></div>
+            </div>
+            <div>
+                <input class="registro" type="password" placeholder="Contraseña" id="password" name="password">
+                <div class="error-text"></div>
+            </div>
+            <div>
+                <input class="registro" type="submit" value="Iniciar Sesión">
+            </div>
+            <div>
+                <a id="register-link" class="iniciar-sesion" href="registrarse.html">Registrarse</a>
+            </div>
            </form>
         </section>
         </main>
-    
+    <script src="js/iniciarSesion.js"></script>
 </body>
 </html>
