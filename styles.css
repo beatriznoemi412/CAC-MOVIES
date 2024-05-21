@@ -122,15 +122,12 @@ hr{
 }
 .busca {
   background-color:  #9f3647;
-  color: white;
+  color: grey;
   font-size: 1.1rem;
   border-radius: 25px;
   padding: 10px;
   border: solid 1px white;
 
-}
-.input{
-  background-color: rgb(246, 242, 235);
 }
 .section{
   display: flex;
