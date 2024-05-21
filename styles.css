@@ -2,16 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
-.body{
-  font-family: "Nunito", sans-serif ;
+.body {
+  font-family: "Nunito", sans-serif;
   background-color: rgb(55, 47, 47);
 }
-#header{
+#header {
   background-color: #9f3647;
   height: 10vh;
-  position:sticky;
+  position: sticky;
   top: 0;
   z-index: 1000; /* Z-index alto para asegurarse de que el header esté encima de las imágenes */
 }
@@ -20,57 +19,57 @@ h1,
 h2 {
   color: white;
 }
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left:40px;
+  margin-left: 40px;
   margin-right: 40px;
   padding: 1.5rem 0;
 }
-.lista-nav{
+.lista-nav {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
   list-style: none;
   gap: 20px;
-    /* Agregar efecto de botón presionado */
-    transition: transform 0.3s, box-shadow 0.3s;
-}   
+  /* Agregar efecto de botón presionado */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 .logoNav:hover,
 .lista-nav:hover {
-        transform: scale(0.95);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        border-radius: 5px;
-        background-color: #ce5065;
-    
+  transform: scale(0.95);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: #ce5065;
 }
 .logoNav {
   transition: transform 0.3s, box-shadow 0.3s;
- }
-.logo{
+}
+.logo {
   width: 20px;
   height: 15px;
 }
 /*Index.html*/
 
-#img{
-    width: 100%;
-    height:600px;
+#img {
+  width: 100%;
+  height: 600px;
 }
-.banner{
-  display:block;
+.banner {
+  display: block;
   text-align: center;
 }
 .background {
-    background:linear-gradient(to right top, #0a0a0a8a, #3733338a), url('img/man-watching.jpg');
-    background-size: cover; /* Para ajustar la imagen al tamaño del contenedor */
-    background-position: center; /* Para centrar la imagen */
-    background-repeat: no-repeat; 
-    height: 90vh;
+  background: linear-gradient(to right top, #0a0a0a8a, #3733338a),
+    url("img/man-watching.jpg");
+  background-size: cover; /* Para ajustar la imagen al tamaño del contenedor */
+  background-position: center; /* Para centrar la imagen */
+  background-repeat: no-repeat;
+  height: 90vh;
 }
-.background-titulo{
+.background-titulo {
   padding-top: 20px;
   font-size: 3rem;
   font-weight: 700;
@@ -83,58 +82,56 @@ h2 {
   text-align: center;
   padding-top: 30px;
 }
-.section-form{
+.section-form {
   display: inline-block;
   text-align: center;
 }
-.subtitulo-form{
+.subtitulo-form {
   margin-bottom: 40px;
 }
-.busca,
-.registrate, .boton-anterior, .boton-siguiente {
+
+.registrate,
+.boton-anterior,
+.boton-siguiente {
   background-color: #9f3647;
   font-size: 1.4rem;
   border-radius: 5px;
   padding: 20px;
   margin-top: 20px;
-  margin-left:20px;
-   /* Agregar efecto de botón presionado */
-   transition: transform 0.3s, box-shadow 0.3s;
+  margin-left: 20px;
+  /* Agregar efecto de botón presionado */
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 .busca:hover,
 .registrate:hover,
 .boton-anterior:hover,
 .boton-siguiente:hover {
-    background-color: #9f3647;
-    transform: scale(0.95);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  background-color: #9f3647;
+  transform: scale(0.95);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
-hr{
-  margin-top:80px;
-  border: 1px solid  #9f3647;
+hr {
+  margin-top: 80px;
+  border: 1px solid #9f3647;
   margin-left: 80px;
   margin-right: 80px;
 }
-.input{
+.input {
   background-color: rgb(246, 242, 235);
- 
 }
 .busca {
-  background-color:  #9f3647;
-  color: grey;
+  background-color: #9f3647;
+  color: rgb(249, 245, 245);
   font-size: 1.1rem;
   border-radius: 25px;
   padding: 10px;
-  border: solid 1px white;
-
 }
-.section{
+.section {
   display: flex;
   flex-direction: column;
-  
 }
-#contenedor-api{
+#contenedor-api {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -144,53 +141,50 @@ hr{
 }
 
 .contenedor .pelicula {
-	text-align: center;
+  text-align: center;
 }
 
 .contenedor-api .pelicula .titulo {
-	font-size: 16px;
-	font-weight: 600;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .contenedor-api .pelicula .poster {
-	width: 100%;
-	margin-bottom: 10px;
-	border-radius: 15px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 15px;
 }
 
 .paginacion {
-	position: fixed;
-	bottom: 0;
-	background: #100a1f;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	gap: 20px;
-	padding: 10px;
+  position: fixed;
+  bottom: 0;
+  background: #100a1f;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
 }
 
-
-.cards{
+.cards {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 60px;
-  margin: 40px 80px ;
+  margin: 40px 80px;
 }
-.card{
+.card {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
   transition: all 0.5s ease;
-  
 }
-.card:hover{  
+.card:hover {
   box-shadow: 0 0 40px rgba(159, 54, 72, 0.8);
   transform: scale(0.9);
- 
- }
+}
 .pelicula-api,
-.pelicula{
+.pelicula {
   width: 200px;
   height: 300px;
   border-radius: 10px;
@@ -201,7 +195,7 @@ hr{
   position: relative;
   z-index: 0; /* Z-index menor que el header para que las imágenes pasen detrás */
 }
-.titulo-pelicula{
+.titulo-pelicula {
   z-index: 2;
   position: absolute;
   text-align: center;
@@ -213,9 +207,8 @@ hr{
   filter: blur(5px);
   opacity: 0;
   transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out;
-
 }
-.titulo-pelicula:hover{
+.titulo-pelicula:hover {
   width: 100%;
   height: 100%;
   backdrop-filter: blur(10px);
@@ -225,20 +218,21 @@ hr{
   filter: blur(0);
   opacity: 1;
 }
-  h4 {
-      font-size: 1.6rem;
-      font-weight: bold;
-      opacity: 0;
-      margin-bottom: 0.5rem;
-      letter-spacing: 0.1rem;
-      transition: opacity 0.5s ease-in-out;
+h4 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  opacity: 0;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1rem;
+  transition: opacity 0.5s ease-in-out;
 }
-  h4:hover{
-    width: 100%;
-    padding: 0.5rem;
-    opacity: 1;
+h4:hover {
+  width: 100%;
+  padding: 0.5rem;
+  opacity: 1;
 }
-.boton-anterior, .boton-siguiente{
+.boton-anterior,
+.boton-siguiente {
   color: white;
   border: solid 1px white;
 }
@@ -248,47 +242,43 @@ a {
   font-size: 1.2rem;
   cursor: pointer;
 }
-.peliculas-aclamadas{
+.peliculas-aclamadas {
   margin-bottom: 60px;
 }
-.scroll-container{
- 
+.scroll-container {
   overflow-x: auto; /* Habilita el scroll horizontal */
   width: 100%; /* Ajusta el ancho del contenedor */
   white-space: nowrap; /* Evita que las imágenes se envuelvan a una nueva línea */
   padding: 50px;
-  
 }
 /* Estilos para la barra de scroll */
 .scroll-container::-webkit-scrollbar {
   width: 10px; /* Ancho de la barra de scroll */
-  background-color:  rgb(55, 47, 47);
-
+  background-color: rgb(55, 47, 47);
 }
 
 .scroll-container::-webkit-scrollbar-thumb {
-  background-color:  #9f3647;
+  background-color: #9f3647;
   border-radius: 10px; /* Bordes redondeados para la barra de scroll */
 }
-.cards-dos{
+.cards-dos {
   display: flex;
   justify-content: space-between;
   gap: 25px;
-  margin: 40px 30px ;
+  margin: 40px 30px;
 }
 
 /*Registrarse*/
-.header{
+.header {
   margin-left: 20px;
 }
-.popkorn{
-  background-image: url('img/popkorn.jpg');
+.popkorn {
+  background-image: url("img/popkorn.jpg");
   width: 100%;
   height: 100vh;
   background-size: cover; /* Para ajustar la imagen al tamaño del contenedor */
   background-position: center; /* Para centrar la imagen */
-  background-repeat: no-repeat; 
-  
+  background-repeat: no-repeat;
 }
 .registrarse form {
   display: flex;
@@ -308,27 +298,27 @@ label {
   color: rgb(198, 195, 195);
 }
 
-.linea-borde{
-  border: 1px solid 
+.linea-borde {
+  border: 1px solid;
 }
- .titulo{
+.titulo {
   font-weight: bold;
   text-align: center;
 }
 
-.registro{
+.registro {
   width: 200px;
   height: 25px;
   padding: 0px 10px;
-  font-size: .8rem;
+  font-size: 0.8rem;
   border-radius: 20px;
- 
-  background-color:  #59141e;
+
+  background-color: #59141e;
   outline: none;
-  color:rgb(173, 168, 168);
+  color: rgb(173, 168, 168);
 }
 .date {
-  color:rgb(173, 168, 168);
+  color: rgb(173, 168, 168);
 }
 .error .error-text {
   color: red;
@@ -341,12 +331,12 @@ label {
   border-color: red;
 }
 /*INICIAR SESION*/
-.iniciar-sesion{
-  color:rgb(173, 168, 168);
-  font-size: .9rem;
+.iniciar-sesion {
+  color: rgb(173, 168, 168);
+  font-size: 0.9rem;
 }
 /*FOOTER*/
 #footer {
   background-color: #9f3647;
- 
 }
+
