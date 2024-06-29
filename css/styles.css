@@ -339,4 +339,45 @@ label {
 #footer {
   background-color: #9f3647;
 }
+/*AdministradorPeliculas.php
+  Estilos para la tabla */
+  .tabla{
+    background-color: rgb(58, 55, 55);
+  }
 
+  #tablaPeliculas {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 60%;
+    border-collapse: collapse;
+    border: 1px solid rgb(159, 20, 20);
+    margin-left: 20%;
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #d4cfcf;
+
+  }
+
+  #tablaPeliculas th {
+    width: 60%;
+    color: black;
+    padding: 10px;
+    text-align: left;
+    background-color: #ba6a77;
+  }
+
+  #tablaPeliculas td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #100f0f;
+  }
+
+  #tablaPeliculas tbody td:first-child {
+    font-weight: bold;
+  }
+  #tablaPeliculas tbody td:last-child {
+    text-align: center;
+  }
+  
