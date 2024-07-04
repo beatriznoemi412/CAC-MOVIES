@@ -39,7 +39,7 @@
                    
                     include 'index.php';
             
-                   
+                    if ($_SERVER['REQUEST_METHOD'] !== 'POST') {  
                 // Obtener los datos de las películas
                     $sql = "SELECT id_registro, nombre, descripcion, director, estrellas, genero FROM registropeliculas";
                     $result = $conn->query($sql);
@@ -61,8 +61,9 @@
                   }
 
                    $conn->close();
+                }
                     ?>
-                    
+                   
                 </tbody>
             </table>
         </div>
